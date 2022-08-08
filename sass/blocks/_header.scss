@@ -5,19 +5,19 @@
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
-
+	z-index: 5;
 	&__info {
 		max-width: 620px;
 		margin-left: auto;
 		padding-top: 60px;
 		margin-right: 70px;
+		filter: drop-shadow(-1px 7px 22px #000000);
+
 		h1 {
 			margin-bottom: 20px;
-			text-shadow: rgb(0, 0, 0) 1px 0px 20px;
 		}
 		p:not(:last-child) {
 			margin-bottom: 20px;
-			text-shadow: rgb(0, 0, 0) 1px 0px 25px;
 		}
 	}
 
