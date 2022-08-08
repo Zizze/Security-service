@@ -110,9 +110,13 @@ legend {
   display: block;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Work Sans";
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #ffff;
   background-color: #1c1b1b;
 }
@@ -125,6 +129,26 @@ h5,
 h6 {
   font-family: "Montserrat";
   font-weight: 700;
+  font-size: 3.8rem;
+}
+
+.container {
+  max-width: 1512px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 50px;
+  background-color: #ff0000;
+  border-radius: 139px;
+  transition: transform 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  transform: scale(1.05);
+  background-color: #df0000;
 }
 
 .nav {
@@ -132,7 +156,6 @@ h6 {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  border-bottom: 1px solid #fff;
 }
 .nav__logo {
   width: 48px;
@@ -148,6 +171,52 @@ h6 {
 }
 .nav__row li:hover, .nav__row li:active {
   color: #ff0000;
+}
+
+.bg-screen {
+  width: 100%;
+  height: calc(100vh - 79px);
+  background: url("../img/bg.png") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.bg-screen__info {
+  max-width: 620px;
+  margin-left: auto;
+  padding-top: 60px;
+  margin-right: 70px;
+}
+.bg-screen__info h1 {
+  margin-bottom: 20px;
+  text-shadow: black 1px 0px 20px;
+}
+.bg-screen__info p:not(:last-child) {
+  margin-bottom: 20px;
+  text-shadow: black 1px 0px 25px;
+}
+.bg-screen__button {
+  margin-top: 25px;
+}
+.bg-screen__steps {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  margin-bottom: 30px;
+  transform: translateX(-50%);
+}
+.bg-screen__steps li {
+  width: 12px;
+  height: 12px;
+  background-color: #ffff;
+  border-radius: 12px;
+}
+.bg-screen__steps .step:not(:last-child) {
+  margin-right: 5px;
+}
+.bg-screen__steps li.active {
+  background-color: #ff0000;
 }
 
 /*# sourceMappingURL=main.css.map */

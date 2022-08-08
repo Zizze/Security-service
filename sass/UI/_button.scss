@@ -1,0 +1,13 @@
+.button {
+	padding: 10px 50px;
+	background-color: $main3;
+	border-radius: 139px;
+	transition: transform 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+	transform: scale(1.05);
+	background-color: #df0000;
+}
