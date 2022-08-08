@@ -1,0 +1,25 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 40px;
+	border-bottom: 1px solid #fff;
+
+	&__logo {
+		width: 48px;
+		height: 48px;
+	}
+	&__row {
+		display: flex;
+		padding: 0 0 0 20px;
+
+		& li:not(:last-child) {
+			margin-right: 40px;
+			transition: color 0.2s ease-in;
+		}
+		& li:hover,
+		& li:active {
+			color: $main3;
+		}
+	}
+}
