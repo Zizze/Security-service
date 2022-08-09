@@ -453,4 +453,79 @@ h6 {
   border-radius: 50%;
 }
 
+.provide-block {
+  padding: 0 40px;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+.provide-block .container {
+  position: relative;
+}
+.provide-block .container::before {
+  content: "";
+  background: url("../../img/blur-elempng.png") 0 0 no-repeat;
+  position: absolute;
+  bottom: -70%;
+  left: -15%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: contain;
+}
+
+.provide__title {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.provide__title--red {
+  color: #ff0000;
+}
+.provide__descr {
+  text-align: center;
+  max-width: 1430px;
+  margin-bottom: 120px;
+}
+.provide__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.provide__card {
+  max-width: 346px;
+  width: 100%;
+  padding: 45px 23px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: background-color 0.4s ease-in;
+  border: rgba(59, 59, 59, 0.295) solid 1px;
+  z-index: 5;
+}
+.provide__card:not(:last-child) {
+  margin-right: 10px;
+}
+.provide__card:hover, .provide__card:active, .provide__card:focus {
+  background-color: #000;
+}
+.provide__card-logo {
+  margin-bottom: 25px;
+  width: 100px;
+  height: 100px;
+}
+.provide__card-title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+.provide__card-descr {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+.provide__card-btn {
+  font-size: 1.8rem;
+  padding: 8px 30px;
+  margin-top: auto;
+}
+
 /*# sourceMappingURL=main.css.map */
