@@ -1,0 +1,173 @@
+.safe-block {
+	padding: 0 40px;
+	margin-bottom: 200px;
+	overflow: hidden;
+	.container {
+		position: relative;
+		&::before {
+			content: "";
+			background: url("../../img/blur-elempng.png") 0 0 no-repeat;
+			position: absolute;
+			bottom: -10%;
+			right: -40%;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background-size: contain;
+		}
+	}
+}
+
+.safe {
+	&__title {
+		margin-bottom: 20px;
+		text-align: center;
+		&--red {
+			color: $main3;
+		}
+	}
+
+	&__descr {
+		margin-bottom: 65px;
+		text-align: center;
+		max-width: 1400px;
+	}
+
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+		max-width: 530px;
+		font-size: 1.8rem;
+		margin-right: 5px;
+	}
+
+	&__button {
+		margin-top: 60px;
+	}
+
+	&__cards {
+		display: flex;
+		z-index: 5;
+
+		.card-idea {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 373px;
+			height: 373px;
+			flex-shrink: 0;
+			padding: 38px 31px;
+			text-align: center;
+			border-radius: 15px;
+			background-color: #000;
+			margin-top: 100px;
+
+			&__title {
+				font-weight: 400;
+				font-size: 2.4rem;
+				max-width: 243px;
+				margin-bottom: 20px;
+			}
+
+			&__descr {
+				font-size: 1.8rem;
+				margin-bottom: 28px;
+			}
+
+			&__logo {
+				background-color: $main2;
+				background-position: center;
+				background-size: cover;
+				max-width: 82px;
+				max-height: 82px;
+				width: 100%;
+				padding: 12px;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+.cards-column {
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+
+	.card-worker {
+		width: 287px;
+		height: 287px;
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-shrink: 0;
+		padding: 20px;
+		text-align: center;
+		border-radius: 15px;
+		background-color: #000;
+		margin-bottom: 40px;
+
+		&__title {
+			font-weight: 400;
+			font-size: 2.4rem;
+			max-width: 240px;
+			margin-bottom: 20px;
+		}
+
+		&__descr {
+			font-size: 1.8rem;
+			margin-bottom: 15px;
+		}
+
+		&__logo {
+			background-color: $main2;
+			background-position: center;
+			background-size: cover;
+			max-width: 52px;
+			max-height: 52px;
+			width: 100%;
+			padding: 6px;
+			border-radius: 50%;
+		}
+	}
+	.card-camera {
+		width: 412px;
+		height: 287px;
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-shrink: 0;
+		padding: 34px 25px;
+		text-align: center;
+		border-radius: 15px;
+		background-color: #000;
+		margin-bottom: 40px;
+
+		&__title {
+			font-weight: 400;
+			font-size: 2.4rem;
+			max-width: 335px;
+			margin-bottom: 20px;
+		}
+
+		&__descr {
+			font-size: 1.8rem;
+			margin-bottom: 20px;
+		}
+
+		&__logo {
+			background-color: $main2;
+			background-position: center;
+			background-size: cover;
+			max-width: 85px;
+			max-height: 85px;
+			width: 100%;
+			padding: 22px 16px;
+			border-radius: 50%;
+		}
+	}
+}
