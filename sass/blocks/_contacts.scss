@@ -1,0 +1,209 @@
+.contacts-block {
+	padding: 0 40px 200px;
+}
+
+.contacts {
+	&__title {
+		text-align: center;
+		margin-bottom: 10px;
+		&--red {
+			color: $main3;
+		}
+	}
+
+	&__descr {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__all-contacts {
+		max-width: 450px;
+		z-index: 5;
+		margin-right: 10px;
+	}
+
+	&__email {
+		display: flex;
+		margin-bottom: 110px;
+		img {
+			width: 50px;
+			height: 50px;
+			object-fit: center;
+			margin-right: 25px;
+		}
+	}
+
+	&__email-column {
+		padding-top: 10px;
+	}
+
+	&__email-title {
+		font-size: 2.4rem;
+		margin-bottom: 15px;
+	}
+
+	&__email-adress {
+		transition: color 0.2s ease-in;
+		&:hover {
+			color: $main3;
+		}
+	}
+
+	&__phone {
+		display: flex;
+		margin-bottom: 110px;
+		img {
+			width: 50px;
+			height: 50px;
+			object-fit: center;
+			margin-right: 25px;
+		}
+	}
+
+	&__phone-column {
+		padding-top: 10px;
+	}
+
+	&__phone-title {
+		font-size: 2.4rem;
+		margin-bottom: 15px;
+	}
+
+	&__phone-adress {
+		transition: color 0.2s ease-in;
+		&:hover {
+			color: $main3;
+		}
+	}
+
+	&__office {
+		display: flex;
+		img {
+			width: 50px;
+			height: 50px;
+			object-fit: center;
+			margin-right: 25px;
+		}
+	}
+
+	&__office-column {
+		padding-top: 10px;
+	}
+
+	&__office-title {
+		font-size: 2.4rem;
+		margin-bottom: 15px;
+	}
+
+	&__office-adress {
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+
+		background-color: #000;
+		border-radius: 20px;
+		padding: 50px;
+		max-width: 650px;
+		width: 100%;
+		z-index: 5;
+		&-name {
+			position: relative;
+			margin-bottom: 40px;
+			label {
+				position: absolute;
+				top: -25%;
+				left: 2%;
+				background-color: #000;
+				padding: 0 5px;
+			}
+			input {
+				border: 1px solid $main2;
+				display: block;
+				max-width: 550px;
+				width: 100%;
+				border-radius: 8px;
+				font-size: 2.4rem;
+				height: 64px;
+				padding: 0 10px;
+			}
+		}
+
+		&-email {
+			position: relative;
+			margin-bottom: 40px;
+			label {
+				position: absolute;
+				top: -25%;
+				left: 2%;
+				background-color: #000;
+				padding: 0 5px;
+			}
+			input {
+				border: 1px solid $main2;
+				display: block;
+				max-width: 550px;
+				width: 100%;
+				border-radius: 8px;
+				font-size: 2.4rem;
+				height: 64px;
+				padding: 0 10px;
+			}
+		}
+
+		&-subject {
+			position: relative;
+			margin-bottom: 40px;
+			label {
+				position: absolute;
+				top: -25%;
+				left: 2%;
+				background-color: #000;
+				padding: 0 5px;
+			}
+			input {
+				border: 1px solid $main2;
+				display: block;
+				max-width: 550px;
+				width: 100%;
+				border-radius: 8px;
+				font-size: 2.4rem;
+				height: 64px;
+				padding: 0 10px;
+			}
+		}
+
+		&-message {
+			position: relative;
+			margin-bottom: 40px;
+			label {
+				position: absolute;
+				top: -6%;
+				left: 2%;
+				background-color: #000;
+				padding: 0 5px;
+			}
+			textarea {
+				border: 1px solid $main2;
+				display: block;
+				max-width: 550px;
+				width: 100%;
+				border-radius: 8px;
+				font-size: 2.4rem;
+				height: 250px;
+				padding: 15px;
+				resize: none;
+			}
+		}
+
+		&-btn {
+			align-self: center;
+		}
+	}
+}
