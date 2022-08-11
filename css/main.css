@@ -137,6 +137,27 @@ h6 {
   margin: 0 auto;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #c90000 #3b3b3b;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #3b3b3b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c90000;
+  border-radius: 10px;
+  border: 0px solid #ffffff;
+}
+
 .button {
   padding: 10px 50px;
   background-color: #ff0000;
@@ -187,6 +208,7 @@ h6 {
   margin-left: auto;
   padding-top: 10%;
   margin-right: 70px;
+  text-shadow: 1px 2px 1px #000;
   filter: drop-shadow(-1px 7px 22px #000000);
 }
 .bg-screen__info h1 {
