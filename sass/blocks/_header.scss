@@ -1,7 +1,7 @@
 .bg-screen {
 	width: 100%;
 	height: calc(100vh - 79px);
-	background: url("../img/bg.png") center no-repeat;
+	background: url("../../img/bg-screen/1.jpg") center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
@@ -9,7 +9,7 @@
 	&__info {
 		max-width: 620px;
 		margin-left: auto;
-		padding-top: 60px;
+		padding-top: 10%;
 		margin-right: 70px;
 		filter: drop-shadow(-1px 7px 22px #000000);
 
