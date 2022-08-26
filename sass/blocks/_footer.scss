@@ -21,6 +21,11 @@
 
 .footer {
 	padding: 35px 40px;
+	@media screen and (max-width: 750px) {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -28,7 +33,6 @@
 	}
 
 	&__left {
-		width: 250px;
 		z-index: 5;
 		padding-top: 165px;
 		li {
@@ -50,8 +54,9 @@
 
 	&__logo {
 		z-index: 5;
-		width: 165px;
-		height: 165px;
+		max-width: 165px;
+		max-height: 165px;
+		width: 100%;
 		margin-bottom: 60px;
 		position: relative;
 		&::after {
@@ -88,6 +93,11 @@
 		justify-content: space-between;
 		position: relative;
 		width: 310px;
+		margin: 0 20px;
+		@media screen and (max-width: 750px) {
+			width: 200px;
+		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -117,9 +127,9 @@
 	}
 
 	&__right {
-		width: 250px;
 		z-index: 5;
 		padding-top: 165px;
+		text-align: justify;
 		li:not(:last-child) {
 			margin-bottom: 20px;
 		}
@@ -142,8 +152,10 @@
 			padding-left: 30px;
 			padding-right: 10px;
 			color: #fff;
-			width: 321px;
+			max-width: 321px;
 			height: 51px;
+			width: 100%;
+
 			font-size: 1.8rem;
 		}
 
@@ -154,6 +166,9 @@
 			border-radius: 0px 6px 6px 0px;
 			color: #000;
 			transition: all 0.2s ease-in;
+			@media screen and (max-width: 450px) {
+				padding: 11px 15px;
+			}
 			&:hover,
 			&:active,
 			&:focus {

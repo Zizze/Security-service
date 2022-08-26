@@ -1,5 +1,8 @@
 .contacts-block {
 	padding: 0 40px 200px;
+	@media screen and (max-width: 750px) {
+		padding: 0 10px 200px;
+	}
 }
 
 .contacts {
@@ -19,12 +22,20 @@
 	&__info {
 		display: flex;
 		justify-content: space-between;
+		@media screen and (max-width: 1000px) {
+			flex-direction: column;
+
+			align-items: center;
+		}
 	}
 
 	&__all-contacts {
 		max-width: 450px;
 		z-index: 5;
 		margin-right: 10px;
+		@media screen and (max-width: 1000px) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__email {
@@ -106,13 +117,15 @@
 	&__form {
 		display: flex;
 		flex-direction: column;
-
 		background-color: #000;
 		border-radius: 20px;
 		padding: 50px;
 		max-width: 650px;
 		width: 100%;
 		z-index: 5;
+		@media screen and (max-width: 500px) {
+			padding: 50px 10px;
+		}
 		&-name {
 			position: relative;
 			margin-bottom: 40px;
@@ -199,6 +212,9 @@
 				height: 250px;
 				padding: 15px;
 				resize: none;
+				@media screen and (max-width: 500px) {
+					height: 200px;
+				}
 			}
 		}
 

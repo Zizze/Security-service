@@ -20,5 +20,8 @@
 		& li:active {
 			color: $main3;
 		}
+		@media screen and (max-width: 750px) {
+			display: none;
+		}
 	}
 }

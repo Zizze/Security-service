@@ -136,6 +136,11 @@ h6 {
   max-width: 1512px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1512px) {
+  .container {
+    max-width: 100%;
+  }
+}
 
 /* Firefox */
 * {
@@ -193,6 +198,11 @@ h6 {
 .nav__row li:hover, .nav__row li:active {
   color: #ff0000;
 }
+@media screen and (max-width: 750px) {
+  .nav__row {
+    display: none;
+  }
+}
 
 .bg-screen {
   width: 100%;
@@ -216,6 +226,14 @@ h6 {
 }
 .bg-screen__info p:not(:last-child) {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 750px) {
+  .bg-screen__info {
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 10% 20px;
+  }
 }
 .bg-screen__button {
   margin-top: 25px;
@@ -244,6 +262,12 @@ h6 {
 .services-block {
   padding: 190px 40px 0;
   overflow: hidden;
+}
+@media screen and (max-width: 750px) {
+  .services-block {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 .services-block .container {
   position: relative;
@@ -292,6 +316,17 @@ h6 {
   align-items: flex-start;
   justify-content: space-between;
 }
+@media screen and (max-width: 1000px) {
+  .services__cards {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__cards .card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
 
 .card {
   max-width: 440px;
@@ -324,6 +359,12 @@ h6 {
   margin-bottom: 200px;
   overflow: hidden;
 }
+@media screen and (max-width: 750px) {
+  .safe-block {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 .safe-block .container {
   position: relative;
 }
@@ -355,10 +396,23 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1300px) {
+  .safe__flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .safe__info {
   max-width: 530px;
   font-size: 1.8rem;
-  margin-right: 5px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 1300px) {
+  .safe__info {
+    max-width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
 }
 .safe__button {
   margin-top: 60px;
@@ -479,6 +533,12 @@ h6 {
   padding: 0 40px;
   padding-bottom: 200px;
 }
+@media screen and (max-width: 750px) {
+  .provide-block {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 .provide-block .container {
   position: relative;
 }
@@ -509,6 +569,14 @@ h6 {
 .provide__cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .provide__cards {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: auto;
+  }
 }
 .provide__card {
   max-width: 346px;
@@ -522,6 +590,11 @@ h6 {
   transition: background-color 0.4s ease-in;
   border: rgba(59, 59, 59, 0.295) solid 1px;
   z-index: 5;
+}
+@media screen and (max-width: 800px) {
+  .provide__card {
+    flex: 0 0 100%;
+  }
 }
 .provide__card:not(:last-child) {
   margin-right: 10px;
@@ -552,6 +625,11 @@ h6 {
 .contacts-block {
   padding: 0 40px 200px;
 }
+@media screen and (max-width: 750px) {
+  .contacts-block {
+    padding: 0 10px 200px;
+  }
+}
 
 .contacts__title {
   text-align: center;
@@ -568,10 +646,21 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1000px) {
+  .contacts__info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .contacts__all-contacts {
   max-width: 450px;
   z-index: 5;
   margin-right: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .contacts__all-contacts {
+    margin-bottom: 40px;
+  }
 }
 .contacts__email {
   display: flex;
@@ -644,6 +733,11 @@ h6 {
   max-width: 650px;
   width: 100%;
   z-index: 5;
+}
+@media screen and (max-width: 500px) {
+  .contacts__form {
+    padding: 50px 10px;
+  }
 }
 .contacts__form-name {
   position: relative;
@@ -730,6 +824,11 @@ h6 {
   padding: 15px;
   resize: none;
 }
+@media screen and (max-width: 500px) {
+  .contacts__form-message textarea {
+    height: 200px;
+  }
+}
 .contacts__form-btn {
   align-self: center;
 }
@@ -757,13 +856,18 @@ h6 {
 .footer {
   padding: 35px 40px;
 }
+@media screen and (max-width: 750px) {
+  .footer {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
 .footer__row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 125px;
 }
 .footer__left {
-  width: 250px;
   z-index: 5;
   padding-top: 165px;
 }
@@ -783,8 +887,9 @@ h6 {
 }
 .footer__logo {
   z-index: 5;
-  width: 165px;
-  height: 165px;
+  max-width: 165px;
+  max-height: 165px;
+  width: 100%;
   margin-bottom: 60px;
   position: relative;
 }
@@ -820,6 +925,12 @@ h6 {
   justify-content: space-between;
   position: relative;
   width: 310px;
+  margin: 0 20px;
+}
+@media screen and (max-width: 750px) {
+  .footer__socials {
+    width: 200px;
+  }
 }
 .footer__socials::after {
   content: "";
@@ -846,9 +957,9 @@ h6 {
   transform: scale(1.1);
 }
 .footer__right {
-  width: 250px;
   z-index: 5;
   padding-top: 165px;
+  text-align: justify;
 }
 .footer__right li:not(:last-child) {
   margin-bottom: 20px;
@@ -870,8 +981,9 @@ h6 {
   padding-left: 30px;
   padding-right: 10px;
   color: #fff;
-  width: 321px;
+  max-width: 321px;
   height: 51px;
+  width: 100%;
   font-size: 1.8rem;
 }
 .footer__form-btn {
@@ -881,6 +993,11 @@ h6 {
   border-radius: 0px 6px 6px 0px;
   color: #000;
   transition: all 0.2s ease-in;
+}
+@media screen and (max-width: 450px) {
+  .footer__form-btn {
+    padding: 11px 15px;
+  }
 }
 .footer__form-btn:hover, .footer__form-btn:active, .footer__form-btn:focus {
   background-color: #ff0000;
