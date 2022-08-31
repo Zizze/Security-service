@@ -7,6 +7,14 @@ body {
 	font-size: 2.4rem;
 	color: $main2;
 	background-color: $main1;
+
+	@media screen and (max-width: 780px) {
+		font-size: 2rem;
+	}
+
+	@media screen and (max-width: 500px) {
+		font-size: 1.8rem;
+	}
 }
 
 h1,
