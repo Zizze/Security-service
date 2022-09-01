@@ -174,15 +174,13 @@ h6 {
 }
 
 .button {
+  display: inline-block;
   padding: 10px 50px;
   background-color: #ff0000;
   border-radius: 139px;
   transition: transform 0.2s ease-in, background-color 0.2s ease-in;
 }
-
-.button:hover,
-.button:active,
-.button:focus {
+.button:hover, .button:active, .button:focus {
   transform: scale(1.05);
   background-color: #df0000;
 }
@@ -216,12 +214,13 @@ h6 {
 
 .bg-screen {
   width: 100%;
-  height: calc(100vh - 79px);
+  min-height: calc(100vh - 79px);
   background: url("../../img/bg-screen/1.jpg") center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
   z-index: 5;
+  padding-bottom: 50px;
 }
 .bg-screen__info {
   max-width: 620px;
@@ -366,7 +365,7 @@ h6 {
 
 .safe-block {
   padding: 0 40px;
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   overflow: hidden;
 }
 @media screen and (max-width: 750px) {
@@ -421,6 +420,7 @@ h6 {
   max-width: 530px;
   font-size: 1.8rem;
   margin-right: 20px;
+  z-index: 10;
 }
 @media screen and (max-width: 1300px) {
   .safe__info {
@@ -777,7 +777,7 @@ h6 {
   flex-direction: column;
   background-color: #000;
   border-radius: 20px;
-  padding: 50px;
+  padding: 40px;
   max-width: 650px;
   width: 100%;
   z-index: 5;

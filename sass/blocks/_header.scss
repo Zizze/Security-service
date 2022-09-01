@@ -1,11 +1,12 @@
 .bg-screen {
 	width: 100%;
-	height: calc(100vh - 79px);
+	min-height: calc(100vh - 79px);
 	background: url("../../img/bg-screen/1.jpg") center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
 	z-index: 5;
+	padding-bottom: 50px;
 	&__info {
 		max-width: 620px;
 		margin-left: auto;
