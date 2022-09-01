@@ -188,12 +188,39 @@ h6 {
 .nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   padding: 15px 40px;
+}
+@media screen and (max-width: 750px) {
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+  }
+}
+.nav__burger {
+  max-width: 25px;
+  display: none;
+}
+.nav__burger img {
+  width: 100%;
+}
+@media screen and (max-width: 750px) {
+  .nav__burger {
+    display: block;
+  }
 }
 .nav__logo {
   width: 48px;
   height: 48px;
+}
+@media screen and (max-width: 750px) {
+  .nav__logo {
+    width: 35px;
+    height: 35px;
+  }
 }
 .nav__row {
   display: flex;
@@ -220,7 +247,13 @@ h6 {
   overflow: hidden;
   position: relative;
   z-index: 5;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
+}
+@media screen and (max-width: 750px) {
+  .bg-screen {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .bg-screen__info {
   max-width: 620px;
