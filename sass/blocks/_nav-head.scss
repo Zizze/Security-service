@@ -15,7 +15,13 @@
 	&__burger {
 		max-width: 25px;
 		display: none;
-
+		cursor: pointer;
+		transition: transform 0.2s ease-in;
+		&:hover,
+		&:focus,
+		&:active {
+			transform: scale(1.2);
+		}
 		img {
 			width: 100%;
 		}

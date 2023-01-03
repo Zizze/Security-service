@@ -152,6 +152,14 @@ h6 {
   }
 }
 
+.none {
+  display: none;
+}
+
+.scroll-hidden {
+  overflow: hidden;
+}
+
 /* Firefox */
 * {
   scrollbar-width: auto;
@@ -203,6 +211,11 @@ h6 {
 .nav__burger {
   max-width: 25px;
   display: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+.nav__burger:hover, .nav__burger:focus, .nav__burger:active {
+  transform: scale(1.2);
 }
 .nav__burger img {
   width: 100%;
@@ -1117,6 +1130,60 @@ h6 {
 .footer__form-btn:hover, .footer__form-btn:active, .footer__form-btn:focus {
   background-color: #ff0000;
   color: #ffff;
+}
+
+.window-menu {
+  position: fixed;
+  width: 100%;
+  height: 101%;
+  background-color: #1c1b1b;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+}
+.window-menu__list {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.window-menu__list li {
+  transition: color 0.2s ease-in;
+}
+.window-menu__list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.window-menu__list li:hover, .window-menu__list li:active {
+  color: #ff0000;
+}
+.window-menu__close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  max-height: 80px;
+  cursor: pointer;
+  transition: transform ease-in-out 0.3s;
+}
+@media screen and (max-width: 500px) {
+  .window-menu__close {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+.window-menu__close:hover, .window-menu__close:active {
+  transform: rotate(-90deg) scale(1.1);
+}
+.window-menu__close:hover svg path, .window-menu__close:active svg path {
+  fill: #ff0000;
+}
+.window-menu__close svg path {
+  fill: #ffff;
+  transition: fill ease-in-out 0.3s;
 }
 
 /*# sourceMappingURL=main.css.map */
