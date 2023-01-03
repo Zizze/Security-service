@@ -760,6 +760,11 @@ h6 {
   display: flex;
   margin-bottom: 110px;
 }
+@media screen and (max-width: 1000px) {
+  .contacts__email {
+    margin-bottom: 40px;
+  }
+}
 .contacts__email img {
   width: 50px;
   height: 50px;
@@ -783,6 +788,11 @@ h6 {
   display: flex;
   margin-bottom: 110px;
 }
+@media screen and (max-width: 1000px) {
+  .contacts__phone {
+    margin-bottom: 40px;
+  }
+}
 .contacts__phone img {
   width: 50px;
   height: 50px;
@@ -804,6 +814,11 @@ h6 {
 }
 .contacts__office {
   display: flex;
+}
+@media screen and (max-width: 1000px) {
+  .contacts__office {
+    margin-bottom: 40px;
+  }
 }
 .contacts__office img {
   width: 50px;
