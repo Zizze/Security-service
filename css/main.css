@@ -209,8 +209,12 @@ h6 {
   }
 }
 .nav__burger {
+  position: fixed;
+  top: 15;
+  right: 0;
   max-width: 25px;
   display: none;
+  margin-right: 15px;
   cursor: pointer;
   transition: transform 0.2s ease-in;
 }
@@ -1190,10 +1194,10 @@ h6 {
     max-height: 50px;
   }
 }
-.window-menu__close:hover, .window-menu__close:active {
+.window-menu__close:hover, .window-menu__close:active, .window-menu__close:focus {
   transform: rotate(-90deg) scale(1.1);
 }
-.window-menu__close:hover svg path, .window-menu__close:active svg path {
+.window-menu__close:hover svg path, .window-menu__close:active svg path, .window-menu__close:focus svg path {
   fill: #ff0000;
 }
 .window-menu__close svg path {

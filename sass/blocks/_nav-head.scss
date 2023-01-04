@@ -13,8 +13,12 @@
 	}
 
 	&__burger {
+		position: fixed;
+		top: 15;
+		right: 0;
 		max-width: 25px;
 		display: none;
+		margin-right: 15px;
 		cursor: pointer;
 		transition: transform 0.2s ease-in;
 		&:hover,

@@ -43,7 +43,8 @@
 		}
 
 		&:hover,
-		&:active {
+		&:active,
+		&:focus {
 			transform: rotate(-90deg) scale(1.1);
 			svg path {
 				fill: $main3;
